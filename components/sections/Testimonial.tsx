@@ -16,7 +16,7 @@ export default function Testimonial() {
   ];
 
   return (
-    <section className="py-12 bg-gray-900 text-white">
+    <section  id="testimonial" className="py-12 bg-gray-900 text-white">
       <div className="container mx-auto">
         <div className="lg:flex lg:justify-between">
           <div className="mb-8">
