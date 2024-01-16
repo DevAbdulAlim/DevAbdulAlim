@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import {
   FaHome,
@@ -39,12 +39,12 @@ const pages = [
 export default function Page() {
   return (
     <div className="relative flex">
-      <ul className="fixed flex flex-col justify-center items-start h-full left-2">
+      <ul className="fixed flex flex-col items-start justify-center h-full left-2">
         {pages.map((page, index) => (
           <li key={index}>
             <Link
               href={page.url}
-              className="py-2 px-4 rounded-md flex items-center space-x-2 group hover:bg-blue-500 hover:text-white"
+              className="flex items-center px-4 py-2 space-x-2 text-white rounded-md group hover:bg-blue-500"
               data-to-scrollspy-id={page.to}
             >
               <span className="">{page.icon}</span>
