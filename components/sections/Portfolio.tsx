@@ -48,8 +48,8 @@ const Portfolio = () => {
           Portfolio
         </h2>
         <p className="mb-8 text-center text-gray-400">
-          Explore some highlights from my portfolio. Here's a glimpse into my
-          work over the past few years.
+          Explore some highlights from my portfolio. Here&apos;s a glimpse into
+          my work over the past few years.
         </p>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

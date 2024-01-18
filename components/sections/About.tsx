@@ -23,14 +23,15 @@ const About = () => {
         <div className="w-full md:w-1/2">
           <h2 className="mb-4 text-4xl font-bold">About Me</h2>
           <p className="mb-6 text-lg leading-relaxed">
-            Hi, I'm Abdul Alim, with over five years of experience in building
-            and maintaining web applications. I enjoy turning complex problems
-            into simple, beautiful, and intuitive solutions. My main focus is on
-            building web applications using cutting-edge technologies.
+            Hi, I&apos;m Abdul Alim, with over five years of experience in
+            building and maintaining web applications. I enjoy turning complex
+            problems into simple, beautiful, and intuitive solutions. My main
+            focus is on building web applications using cutting-edge
+            technologies.
           </p>
 
           <p className="mb-6 text-lg leading-relaxed">
-            I've had the opportunity to work with well-known companies and
+            I&apos;ve had the opportunity to work with well-known companies and
             diverse teams, including Teletalk Bangladesh Ltd. This journey has
             equipped me with a deep understanding of the industry, driving my
             passion for delivering high-quality and innovative web experiences.
