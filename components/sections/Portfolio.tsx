@@ -4,38 +4,38 @@ const Portfolio = () => {
   // Sample project data
   const projects = [
     {
-      title: "JAMstack & Headless Web Development Agency",
-      tags: ["Web Development", "JAMstack", "Headless", "Agency"],
+      title: "Oxyport Full featured ecommerce website",
+      tags: ["Next.js", "Tailwind CSS", "PostgreSQL"],
       image:
         "https://block.codescandy.com/assets/images/perosnal-portfolio/personal-portfolio-img-2.jpg", // Replace with the actual image URL
     },
     {
-      title: "Figma Bootstrap",
-      tags: ["Design", "Figma", "Bootstrap"],
+      title: "Full Featured Ecommerce website(PERN)",
+      tags: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       image:
         "https://block.codescandy.com/assets/images/perosnal-portfolio/personal-portfolio-img-2.jpg", // Replace with the actual image URL
     },
     {
-      title: "Figma Bootstrap",
-      tags: ["Design", "Figma", "Bootstrap"],
+      title: "Online Coursing Website",
+      tags: ["Next.js", "Tailwind CSS", "PostgreSQL"],
       image:
         "https://block.codescandy.com/assets/images/perosnal-portfolio/personal-portfolio-img-2.jpg", // Replace with the actual image URL
     },
     {
-      title: "Figma Bootstrap",
-      tags: ["Design", "Figma", "Bootstrap"],
+      title: "Medical",
+      tags: ["React.js", "Tailwind CSS"],
       image:
         "https://block.codescandy.com/assets/images/perosnal-portfolio/personal-portfolio-img-2.jpg", // Replace with the actual image URL
     },
     {
-      title: "Figma Bootstrap",
-      tags: ["Design", "Figma", "Bootstrap"],
+      title: "Elearning website",
+      tags: ["React.js", "MUI", "Node.js"],
       image:
         "https://block.codescandy.com/assets/images/perosnal-portfolio/personal-portfolio-img-2.jpg", // Replace with the actual image URL
     },
     {
-      title: "Figma Bootstrap",
-      tags: ["Design", "Figma", "Bootstrap"],
+      title: "Invoice Management System",
+      tags: ["Next.js", "Tailwind CSS", "PostgreSQL"],
       image:
         "https://block.codescandy.com/assets/images/perosnal-portfolio/personal-portfolio-img-2.jpg", // Replace with the actual image URL
     },

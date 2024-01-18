@@ -1,37 +1,43 @@
-// About.js
+import Lottie from "lottie-react";
 import React from "react";
+import animationData from "../../public/img/about.json";
 
 const About = () => {
   return (
-    <section id="about" className="bg-white py-16">
-      <div className="container mx-auto flex items-center">
+    <section id="about" className="py-16 text-white bg-gray-900">
+      <div className="container flex flex-col items-center mx-auto md:flex-row">
         {/* Left Column - Image */}
-        <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
-          <img
-            src="your-profile-image.jpg"
-            alt="Your Name"
-            className="rounded-full w-48 h-48 object-cover mx-auto md:mx-0"
+        <div className="w-full md:w-1/2 md:pr-8">
+          {/* Lottie Animation */}
+
+          <Lottie
+            animationData={animationData}
+            loop={true}
+            autoPlay={true}
+            className="w-full h-full rounded-md"
           />
         </div>
 
         {/* Right Column - Content */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-semibold mb-4">About Me</h2>
-          <p className="text-lg mb-6">
-            Hi, I'm [Your Name], a passionate and creative developer. I enjoy
-            turning complex problems into simple, beautiful, and intuitive
-            solutions. My main focus is on building web applications using
-            cutting-edge technologies.
+          <h2 className="mb-4 text-4xl font-bold">About Me</h2>
+          <p className="mb-6 text-lg leading-relaxed">
+            Hi, I'm Abdul Alim, with over five years of experience in building
+            and maintaining web applications. I enjoy turning complex problems
+            into simple, beautiful, and intuitive solutions. My main focus is on
+            building web applications using cutting-edge technologies.
           </p>
-          <p className="text-lg mb-6">
+
+          <p className="mb-6 text-lg leading-relaxed">
+            I've had the opportunity to work with well-known companies and
+            diverse teams, including Teletalk Bangladesh Ltd. This journey has
+            equipped me with a deep understanding of the industry, driving my
+            passion for delivering high-quality and innovative web experiences.
+          </p>
+          <p className="mb-6 text-lg leading-relaxed">
             With a strong foundation in computer science and hands-on experience
             in software development, I am constantly seeking to expand my
             knowledge and stay up-to-date with industry trends.
-          </p>
-          <p className="text-lg mb-6">
-            My goal is to create software that not only meets the needs of users
-            but also brings a positive impact to the world. Let's build
-            something amazing together!
           </p>
           <div className="flex space-x-4">
             <a

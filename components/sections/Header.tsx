@@ -1,25 +1,42 @@
 import React from "react";
+import Lottie from "lottie-react";
+import animationData from "../../public/img/code1.json";
 
 const Header = () => {
   return (
-    <header id="header" className="py-56 text-white bg-gray-900">
+    <header
+      id="header"
+      className="flex items-center justify-center py-20 text-white bg-gray-900"
+    >
       <div className="container flex flex-col items-center mx-auto">
+        <img
+          src="https://block.codescandy.com/assets/images/perosnal-portfolio/personal-profile-img.jpg"
+          alt="Your Name"
+          className="object-cover mb-6 rounded-full w-30 h-30"
+        />
+
         <div className="mb-6 text-center">
-          <h1 className="text-4xl font-bold">Hi there, my name is</h1>
-          <h2 className="text-5xl font-extrabold">Lee Robinson</h2>
+          <h1 className="mb-5 text-4xl font-bold font-poppins">
+            Hi there, my name is
+          </h1>
+          <h2 className="text-5xl font-extrabold font-poppins">Abdul Alim</h2>
         </div>
 
-        <p className="max-w-2xl mb-8 text-lg text-center">
-          I'm the VP of Developer Experience at Vercel where my team helps
-          developers build a faster web. I'm an advisor and investor in early
-          stage startups.
+        <p className="max-w-2xl mb-8 text-lg text-center font-poppins">
+          I am a full stack web developer with over five years of experience
+          developing and maintaining web apps. I have experience with both
+          front-end and back-end technologies, as well as some knowledge of
+          DevOps.
         </p>
+      </div>
 
-        {/* Image */}
-        <img
-          src="https://block.codescandy.com/assets/images/perosnal-portfolio/personal-profile-img.jpg" // Replace with the actual image URL
-          alt="Lee Robinson"
-          className="object-cover w-40 h-40 rounded-full"
+      {/* Lottie Animation */}
+      <div className="flex-grow">
+        <Lottie
+          animationData={animationData}
+          loop={true}
+          autoPlay={true}
+          className="w-full h-full rounded-md"
         />
       </div>
     </header>

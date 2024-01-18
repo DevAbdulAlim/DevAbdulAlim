@@ -1,60 +1,79 @@
 import React from "react";
 import { Button } from "../ui/button";
+import {
+  BiLogoCss3,
+  BiLogoHtml5,
+  BiLogoJavascript,
+  BiLogoNodejs,
+  BiLogoPostgresql,
+  BiLogoReact,
+  BiLogoTypescript,
+} from "react-icons/bi";
+import { SiNextdotjs } from "react-icons/si";
 
 const Skills = () => {
-  // Sample skills data
   const skills = [
     {
-      title: "HTML & CSS",
-      description:
-        "Nulla vitae elit libero, a pharetra augue id elit non mi porta gravida.",
+      title: "HTML",
+      icon: <BiLogoHtml5 size={48} color="#E44D26" />,
     },
     {
-      title: "Figma UI Design",
-      description:
-        "Nulla vitae elit libero, a pharetra augue id elit non mi porta gravida.",
+      title: "CSS",
+      icon: <BiLogoCss3 size={48} color="#264DE4" />,
     },
     {
-      title: "React",
-      description:
-        "Nulla vitae elit libero, a pharetra augue id elit non mi porta gravida.",
+      title: "JavaScript",
+      icon: <BiLogoJavascript size={48} color="#F0DB4F" />,
+    },
+    {
+      title: "TypeScript",
+      icon: <BiLogoTypescript size={48} color="#3178C6" />,
+    },
+    {
+      title: "React.js",
+      icon: <BiLogoReact size={48} color="#61DAFB" />,
+    },
+    {
+      title: "Next.js",
+      icon: <SiNextdotjs size={48} color="#000000" />,
     },
     {
       title: "Node.js",
-      description:
-        "Nulla vitae elit libero, a pharetra augue id elit non mi porta gravida.",
+      icon: <BiLogoNodejs size={48} color="#8CC84B" />,
     },
-    // Add more skills as needed
+
+    {
+      title: "PostgreSQL",
+      icon: <BiLogoPostgresql size={48} color="#336791" />,
+    },
   ];
 
   return (
-    <section id="skills" className="py-56 bg-gray-800 text-white">
+    <section id="skills" className="py-20 text-white bg-gray-800">
       <div className="container mx-auto">
-        <div className="lg:flex items-center">
-          <div className="text-center">
-            <h2 className="mb-8 text-2xl font-bold">MY SKILLS</h2>
-            <h3 className="text-4xl">My areas of expertise</h3>
-            <p className="mb-4">
-              Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas
-              faucibus mollis elit interdum. Duis mollis, ligula magna mollis.
-            </p>
-            <Button>Download CV</Button>
-          </div>
+        <div className="mb-10 text-center">
+          <h2 className="mb-2 text-3xl font-bold">MY SKILLS</h2>
+          <h3 className="text-4xl">Areas of Expertise</h3>
+          <p className="mt-4 text-gray-300">
+            With over 5 years of experience, I specialize in various
+            technologies, focusing on JavaScript, React.js, and more. Download
+            my CV below.
+          </p>
+          <Button className="mt-6">Download CV</Button>
+        </div>
 
-          <div className="grid grid-cols-1 mt-8 lg:mt-0 gap-8 md:grid-cols-2">
-            {skills.map((skill, index) => (
-              <div key={index} className="p-6 bg-white rounded-md shadow-md">
-                <h3 className="mb-2 text-xl font-semibold">{skill.title}</h3>
-                <p className="text-gray-700">{skill.description}</p>
-                <a
-                  href="#"
-                  className="block mt-4 text-blue-500 hover:underline"
-                >
-                  Link Text
-                </a>
-              </div>
-            ))}
-          </div>
+        <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
+          {skills.map((skill, index) => (
+            <div key={index} className="p-6 text-center rounded-md shadow-lg">
+              <span className="flex items-center justify-center">
+                {" "}
+                {skill.icon}
+              </span>
+              <h3 className="mt-2 text-xl font-semibold text-gray-200">
+                {skill.title}
+              </h3>
+            </div>
+          ))}
         </div>
       </div>
     </section>
