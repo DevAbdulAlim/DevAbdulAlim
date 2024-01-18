@@ -12,42 +12,58 @@ export default function Testimonial() {
       name: "Jane Smith",
       designation: "COO",
     },
+    {
+      message: "Working with this team was a pleasure. I would like to...",
+      name: "Bob Johnson",
+      designation: "CTO",
+    },
     // Add more testimonials as needed
   ];
 
   return (
-    <section  id="testimonial" className="py-12 bg-gray-900 text-white">
-      <div className="container mx-auto">
+    <section id="testimonial" className="py-20 text-white bg-gray-700">
+      <div className="mx-auto max-w-7xl">
         <div className="lg:flex lg:justify-between">
           <div className="mb-8">
-            <h2 className="text-3xl font-semibold mb-4">TESTIMONIALS</h2>
+            <h2 className="mb-4 text-3xl font-semibold">TESTIMONIALS</h2>
             <p className="text-lg">
               I am proud of my results. I bring solutions to make life easier
               for our customers.
             </p>
           </div>
-          <div className="md:flex mb-8 md:space-x-8">
+          <div className="mb-8 md:flex md:space-x-8">
             <div className="text-center">
-              <h3 className="text-2xl font-semibold">236</h3>
+              <h3 className="text-2xl font-semibold">10</h3>
               <p>Awards Won</p>
             </div>
             <div className="text-center">
-              <h3 className="text-2xl font-semibold">236</h3>
-              <p>Awards Won</p>
+              <h3 className="text-2xl font-semibold">80+</h3>
+              <p>Completed Projects</p>
             </div>
             <div className="text-center">
-              <h3 className="text-2xl font-semibold">236</h3>
-              <p>Awards Won</p>
+              <h3 className="text-2xl font-semibold">55</h3>
+              <p>Customer Satisfaction</p>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 gap-8 mx-auto md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-800 p-6 rounded-lg">
-              <p className="text-lg">{testimonial.message}</p>
-              <p className="mt-4 text-gray-400">
-                - {testimonial.name}, {testimonial.designation}
-              </p>
+            <div
+              key={index}
+              className="p-6 bg-gray-800 rounded-lg hover:bg-gray-900"
+            >
+              <p className="mb-4 text-lg">{testimonial.message}</p>
+              <div className="flex">
+                <img
+                  className="w-10 h-10 mr-2 rounded-full"
+                  src={`https://i.pravatar.cc/150?img=${index + 51}`}
+                  alt={testimonial.name}
+                />
+
+                <p className="mt-2 text-gray-400">
+                  - {testimonial.name}, {testimonial.designation}
+                </p>
+              </div>
             </div>
           ))}
         </div>

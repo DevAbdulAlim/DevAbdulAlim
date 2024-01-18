@@ -1,11 +1,12 @@
 import Lottie from "lottie-react";
 import React from "react";
 import animationData from "../../public/img/about.json";
+import { FaDev, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const About = () => {
   return (
     <section id="about" className="py-16 text-white bg-gray-900">
-      <div className="container flex flex-col items-center mx-auto md:flex-row">
+      <div className="flex flex-col items-center mx-auto max-w-7xl md:flex-row">
         {/* Left Column - Image */}
         <div className="w-full md:w-1/2 md:pr-8">
           {/* Lottie Animation */}
@@ -39,25 +40,30 @@ const About = () => {
             in software development, I am constantly seeking to expand my
             knowledge and stay up-to-date with industry trends.
           </p>
-          <div className="flex space-x-4">
-            <a
-              href="https://linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
-            >
-              LinkedIn
-            </a>
+          <div className="flex items-center mt-4 space-x-4">
+            <div className="flex items-center">
+              <FaLinkedin className="text-xl text-blue-500" />
+              <span className="ml-2 text-gray-500 hover:underline">
+                LinkedIn
+              </span>
+            </div>
             <span className="text-gray-500">•</span>
-            <a
-              href="https://github.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:underline"
-            >
-              GitHub
-            </a>
-            {/* Add more social media links as needed */}
+            <div className="flex items-center">
+              <FaGithub className="text-xl text-gray-500" />
+              <span className="ml-2 text-gray-500 hover:underline">GitHub</span>
+            </div>
+            <span className="text-gray-500">•</span>
+            <div className="flex items-center">
+              <FaTwitter className="text-xl text-blue-500" />
+              <span className="ml-2 text-gray-500 hover:underline">
+                Twitter
+              </span>
+            </div>
+            <span className="text-gray-500">•</span>
+            <div className="flex items-center">
+              <FaDev className="text-xl text-gray-500" />
+              <span className="ml-2 text-gray-500 hover:underline">DEV.to</span>
+            </div>
           </div>
         </div>
       </div>

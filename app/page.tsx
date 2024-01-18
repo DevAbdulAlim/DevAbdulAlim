@@ -39,8 +39,8 @@ const pages = [
 export default function Page() {
   return (
     <div className="relative flex">
-      <div className="fixed flex flex-col items-start justify-center h-full p-4 left-2">
-        <ul className="overflow-hidden text-lg bg-gray-800 border rounded-md">
+      <div className="fixed z-10 flex flex-col items-start justify-center h-full p-4 left-2">
+        <ul className="overflow-hidden text-lg bg-gray-800 border rounded-md ">
           {pages.map((page, index) => (
             <li key={index}>
               <Link

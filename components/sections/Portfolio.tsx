@@ -42,8 +42,8 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-12 bg-gray-950">
-      <div className="container mx-auto">
+    <section id="portfolio" className="py-12 bg-gray-900">
+      <div className="mx-auto max-w-7xl">
         <h2 className="mb-8 text-4xl font-bold text-center text-white">
           Portfolio
         </h2>
@@ -56,25 +56,28 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="overflow-hidden bg-white rounded-md shadow-md"
+              className="overflow-hidden bg-gray-800 rounded-md shadow-md"
             >
-              {/* Project Image */}
-              <img
-                src={project.image}
-                alt={project.title}
-                className="object-cover w-full h-48"
-              />
+              <div className="overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="object-cover w-full transition-all duration-500 h-80 hover:scale-110"
+                />
+              </div>
 
               <div className="p-6">
                 {/* Project Title */}
-                <h3 className="mb-2 text-xl font-semibold">{project.title}</h3>
+                <h3 className="mb-2 text-xl font-semibold text-white">
+                  {project.title}
+                </h3>
 
                 {/* Project Tags */}
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="px-2 py-1 text-sm text-white bg-gray-900 rounded"
+                      className="px-2 py-1 text-sm text-white bg-gray-700 rounded"
                     >
                       {tag}
                     </span>

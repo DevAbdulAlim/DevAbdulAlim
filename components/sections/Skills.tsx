@@ -50,7 +50,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="py-20 text-white bg-gray-800">
-      <div className="container mx-auto">
+      <div className="mx-auto max-w-7xl">
         <div className="mb-10 text-center">
           <h2 className="mb-2 text-3xl font-bold">MY SKILLS</h2>
           <h3 className="text-4xl">Areas of Expertise</h3>
@@ -64,9 +64,11 @@ const Skills = () => {
 
         <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
           {skills.map((skill, index) => (
-            <div key={index} className="p-6 text-center rounded-md shadow-lg">
+            <div
+              key={index}
+              className="p-6 text-center transition-transform transform bg-gray-700 rounded-md shadow-lg hover:scale-105"
+            >
               <span className="flex items-center justify-center">
-                {" "}
                 {skill.icon}
               </span>
               <h3 className="mt-2 text-xl font-semibold text-gray-200">
