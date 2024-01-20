@@ -6,38 +6,32 @@ const Portfolio = () => {
     {
       title: "Oxyport Full featured ecommerce website",
       tags: ["Next.js", "Tailwind CSS", "PostgreSQL"],
-      image:
-        "https://block.codescandy.com/assets/images/perosnal-portfolio/personal-portfolio-img-2.jpg", // Replace with the actual image URL
+      image: "/img/portfolio1.png", // Replace with the actual image URL
     },
     {
       title: "Full Featured Ecommerce website(PERN)",
       tags: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
-      image:
-        "https://block.codescandy.com/assets/images/perosnal-portfolio/personal-portfolio-img-2.jpg", // Replace with the actual image URL
+      image: "/img/activeco.png", // Replace with the actual image URL
     },
     {
       title: "Online Coursing Website",
       tags: ["Next.js", "Tailwind CSS", "PostgreSQL"],
-      image:
-        "https://block.codescandy.com/assets/images/perosnal-portfolio/personal-portfolio-img-2.jpg", // Replace with the actual image URL
+      image: "/img/enet.png", // Replace with the actual image URL
     },
     {
       title: "Medical",
       tags: ["React.js", "Tailwind CSS"],
-      image:
-        "https://block.codescandy.com/assets/images/perosnal-portfolio/personal-portfolio-img-2.jpg", // Replace with the actual image URL
+      image: "/img/medical.png", // Replace with the actual image URL
     },
     {
       title: "Elearning website",
       tags: ["React.js", "MUI", "Node.js"],
-      image:
-        "https://block.codescandy.com/assets/images/perosnal-portfolio/personal-portfolio-img-2.jpg", // Replace with the actual image URL
+      image: "/img/portfolio2.png", // Replace with the actual image URL
     },
     {
       title: "Invoice Management System",
       tags: ["Next.js", "Tailwind CSS", "PostgreSQL"],
-      image:
-        "https://block.codescandy.com/assets/images/perosnal-portfolio/personal-portfolio-img-2.jpg", // Replace with the actual image URL
+      image: "/img/das.png", // Replace with the actual image URL
     },
   ];
 
