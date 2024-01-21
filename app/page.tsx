@@ -38,22 +38,26 @@ const pages = [
 
 export default function Page() {
   return (
-    <div className="relative flex">
-      <div className="fixed z-10 flex flex-col items-start justify-center h-full p-4 left-2">
-        <ul className="overflow-hidden text-lg bg-gray-800 border rounded-md ">
-          {pages.map((page, index) => (
-            <li key={index}>
-              <Link
-                href={page.url}
-                className="flex items-center px-4 py-2 space-x-2 text-white transition-all duration-300 ease-in-out group hover:bg-gray-600"
-                data-to-scrollspy-id={page.to}
-              >
-                <span className="">{page.icon}</span>
-                <span className="hidden group-hover:inline">{page.title}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+    <>
+      <div className="relative flex">
+        <div className="fixed z-10 flex flex-col items-start justify-center h-full left-1">
+          <ul className="overflow-hidden text-lg bg-gray-800 border rounded-md ">
+            {pages.map((page, index) => (
+              <li key={index}>
+                <Link
+                  href={page.url}
+                  className="flex items-center px-4 py-2 space-x-2 text-white transition-all duration-300 ease-in-out group hover:bg-gray-600"
+                  data-to-scrollspy-id={page.to}
+                >
+                  <span className="">{page.icon}</span>
+                  <span className="hidden group-hover:inline">
+                    {page.title}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
       <div className="flex-grow">
@@ -66,6 +70,6 @@ export default function Page() {
           <Contact />
         </ScrollSpy>
       </div>
-    </div>
+    </>
   );
 }

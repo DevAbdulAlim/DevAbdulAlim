@@ -5,7 +5,7 @@ import { FaDev, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section id="about" className="py-16 text-white bg-gray-900">
+    <section id="about" className="px-3 py-16 text-white bg-gray-900">
       <div className="flex flex-col items-center mx-auto max-w-7xl md:flex-row">
         {/* Left Column - Image */}
         <div className="w-full md:w-1/2 md:pr-8">
@@ -41,7 +41,7 @@ const About = () => {
             in software development, I am constantly seeking to expand my
             knowledge and stay up-to-date with industry trends.
           </p>
-          <div className="flex items-center mt-4 space-x-4">
+          <div className="flex flex-wrap items-center mt-4 space-x-4">
             <div className="flex items-center">
               <FaLinkedin className="text-xl text-blue-500" />
               <span className="ml-2 text-gray-500 hover:underline">

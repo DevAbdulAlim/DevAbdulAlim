@@ -21,12 +21,14 @@ export default function Testimonial() {
   ];
 
   return (
-    <section id="testimonial" className="py-20 text-white bg-gray-700">
+    <section id="testimonial" className="px-3 py-20 text-white bg-gray-700">
       <div className="mx-auto max-w-7xl">
         <div className="lg:flex lg:justify-between">
           <div className="mb-8">
-            <h2 className="mb-4 text-3xl font-semibold">TESTIMONIALS</h2>
-            <p className="text-lg">
+            <h2 className="mb-4 text-3xl font-semibold text-center md:text-left">
+              TESTIMONIALS
+            </h2>
+            <p className="text-lg text-center md:text-left">
               I am proud of my results. I bring solutions to make life easier
               for our customers.
             </p>

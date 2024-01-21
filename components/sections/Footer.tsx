@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub, FaYoutube, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="py-6 text-white bg-gray-900">
+    <footer className="px-3 py-6 text-white bg-gray-900">
       <div className="flex flex-col items-center mx-auto max-w-7xl">
         {/* Social Links */}
         <div className="mb-6">
