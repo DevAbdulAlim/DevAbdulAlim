@@ -6,32 +6,32 @@ const Portfolio = () => {
     {
       title: "Oxyport Full featured ecommerce website",
       tags: ["Next.js", "Tailwind CSS", "PostgreSQL"],
-      image: "/img/portfolio1.png", // Replace with the actual image URL
+      image: "./img/portfolio1.png", // Replace with the actual image URL
     },
     {
       title: "Full Featured Ecommerce website(PERN)",
       tags: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
-      image: "/img/activeco.png", // Replace with the actual image URL
+      image: "./img/activeco.png", // Replace with the actual image URL
     },
     {
       title: "Online Coursing Website",
       tags: ["Next.js", "Tailwind CSS", "PostgreSQL"],
-      image: "/img/enet.png", // Replace with the actual image URL
+      image: "./img/enet.png", // Replace with the actual image URL
     },
     {
       title: "Medical",
       tags: ["React.js", "Tailwind CSS"],
-      image: "/img/medical.png", // Replace with the actual image URL
+      image: "./img/medical.png", // Replace with the actual image URL
     },
     {
       title: "Elearning website",
       tags: ["React.js", "MUI", "Node.js"],
-      image: "/img/portfolio2.png", // Replace with the actual image URL
+      image: "./img/portfolio2.png", // Replace with the actual image URL
     },
     {
       title: "Invoice Management System",
       tags: ["Next.js", "Tailwind CSS", "PostgreSQL"],
-      image: "/img/das.png", // Replace with the actual image URL
+      image: "./img/das.png", // Replace with the actual image URL
     },
   ];
 
