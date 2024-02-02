@@ -10,6 +10,7 @@ import {
   BiLogoTypescript,
 } from "react-icons/bi";
 import { SiNextdotjs } from "react-icons/si";
+import Link from "next/link";
 
 const Skills = () => {
   const skills = [
@@ -54,12 +55,17 @@ const Skills = () => {
         <div className="mb-10 text-center">
           <h2 className="mb-2 text-3xl font-bold">MY SKILLS</h2>
           <h3 className="text-4xl">Areas of Expertise</h3>
-          <p className="mt-4 text-gray-300">
+          <p className="mt-4 mb-4 text-gray-300">
             With over 5 years of experience, I specialize in various
             technologies, focusing on JavaScript, React.js, and more. Download
             my CV below.
           </p>
-          <Button className="mt-6">Download CV</Button>
+          <Link
+            href="https://drive.google.com/file/d/12Ffn2kMXpzAv_wE4SKjc5g0gUAlqXGGQ/view?usp=sharing"
+            className="px-4 py-2 bg-blue-800 rounded-md hover:bg-blue-900"
+          >
+            View CV
+          </Link>
         </div>
 
         <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
