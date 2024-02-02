@@ -11,9 +11,9 @@ const Header = () => {
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center ">
           <img
-            src="https://block.codescandy.com/assets/images/perosnal-portfolio/personal-profile-img.jpg"
+            src="./img/profile.jpg"
             alt="Your Name"
-            className="object-cover mb-6 rounded-full w-30 h-30"
+            className="w-40 h-40 mb-6 rounded-full "
           />
 
           <div className="mb-6 text-center">

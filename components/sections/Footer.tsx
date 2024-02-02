@@ -10,7 +10,7 @@ const Footer = () => {
           <h2 className="mb-4 text-3xl font-bold">Connect with Me</h2>
           <div className="flex justify-center space-x-4">
             <a
-              href="https://linkedin.com/in/your-linkedin"
+              href="https://linkedin.com/in/"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-blue-500"
@@ -18,7 +18,7 @@ const Footer = () => {
               <FaLinkedin size={28} />
             </a>
             <a
-              href="https://github.com/your-github"
+              href="https://github.com/DevAbdulAlim"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-gray-400"
@@ -27,7 +27,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://youtube.com/your-youtube"
+              href="https://youtube.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-red-600"
@@ -35,7 +35,7 @@ const Footer = () => {
               <FaYoutube size={28} />
             </a>
             <a
-              href="https://twitter.com/your-twitter"
+              href="https://twitter.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-blue-400"

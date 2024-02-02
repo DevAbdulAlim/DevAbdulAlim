@@ -116,7 +116,7 @@ const Contact = () => {
                 <div className="flex items-center space-x-4">
                   {/* Social Media Icons */}
                   <a
-                    href="https://linkedin.com/in/yourusername"
+                    href="https://linkedin.com/in/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-500 hover:text-blue-700"
@@ -124,7 +124,7 @@ const Contact = () => {
                     <FaLinkedin size={30} />
                   </a>
                   <a
-                    href="https://github.com/yourusername"
+                    href="https://github.com/DevAbdulAlim"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-500 hover:text-gray-700"
@@ -132,7 +132,7 @@ const Contact = () => {
                     <FaGithub size={30} />
                   </a>
                   <a
-                    href="https://twitter.com/yourusername"
+                    href="https://twitter.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:text-blue-600"
@@ -140,7 +140,7 @@ const Contact = () => {
                     <FaTwitter size={30} />
                   </a>
                   <a
-                    href="https://instagram.com/yourusername"
+                    href="https://instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-pink-500 hover:text-pink-700"
