@@ -9,19 +9,12 @@ import {
   BiLogoReact,
   BiLogoTypescript,
 } from "react-icons/bi";
-import { SiNextdotjs } from "react-icons/si";
+import { SiDjango, SiNextdotjs } from "react-icons/si";
 import Link from "next/link";
+import { FaPython } from "react-icons/fa";
 
 const Skills = () => {
   const skills = [
-    {
-      title: "HTML",
-      icon: <BiLogoHtml5 size={48} color="#E44D26" />,
-    },
-    {
-      title: "CSS",
-      icon: <BiLogoCss3 size={48} color="#264DE4" />,
-    },
     {
       title: "JavaScript",
       icon: <BiLogoJavascript size={48} color="#F0DB4F" />,
@@ -42,7 +35,14 @@ const Skills = () => {
       title: "Node.js",
       icon: <BiLogoNodejs size={48} color="#8CC84B" />,
     },
-
+    {
+      title: "Python",
+      icon: <FaPython size={48} color="#306998" />,
+    },
+    {
+      title: "Django",
+      icon: <SiDjango size={48} color="#092E20" />,
+    },
     {
       title: "PostgreSQL",
       icon: <BiLogoPostgresql size={48} color="#336791" />,
