@@ -1,91 +1,95 @@
-import React from "react";
-import { Button } from "../ui/button";
+"use client";
+
+import type React from "react";
+import { motion } from "framer-motion";
 import {
-  BiLogoCss3,
-  BiLogoHtml5,
-  BiLogoJavascript,
-  BiLogoNodejs,
-  BiLogoPostgresql,
-  BiLogoReact,
-  BiLogoTypescript,
-} from "react-icons/bi";
-import { SiNextdotjs } from "react-icons/si";
-import Link from "next/link";
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaDocker,
+  FaAws,
+  FaLaravel,
+  FaPhp,
+} from "react-icons/fa";
+import {
+  SiMysql,
+  SiNextdotjs,
+  SiPostgresql,
+  SiTypescript,
+} from "react-icons/si";
 
-const Skills = () => {
-  const skills = [
-    {
-      title: "HTML",
-      icon: <BiLogoHtml5 size={48} color="#E44D26" />,
-    },
-    {
-      title: "CSS",
-      icon: <BiLogoCss3 size={48} color="#264DE4" />,
-    },
-    {
-      title: "JavaScript",
-      icon: <BiLogoJavascript size={48} color="#F0DB4F" />,
-    },
-    {
-      title: "TypeScript",
-      icon: <BiLogoTypescript size={48} color="#3178C6" />,
-    },
-    {
-      title: "React.js",
-      icon: <BiLogoReact size={48} color="#61DAFB" />,
-    },
-    {
-      title: "Next.js",
-      icon: <SiNextdotjs size={48} color="#000000" />,
-    },
-    {
-      title: "Node.js",
-      icon: <BiLogoNodejs size={48} color="#8CC84B" />,
-    },
+interface Skill {
+  name: string;
+  icon: React.ReactNode;
+}
 
-    {
-      title: "PostgreSQL",
-      icon: <BiLogoPostgresql size={48} color="#336791" />,
-    },
-  ];
+const skills: Skill[] = [
+  { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
+  { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
+  { name: "React", icon: <FaReact className="text-blue-400" /> },
+  {
+    name: "Next.js",
+    icon: <SiNextdotjs className="text-black dark:text-white" />,
+  },
+  { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
+  { name: "PHP", icon: <FaPhp className="text-indigo-500" /> },
+  { name: "Laravel", icon: <FaLaravel className="text-red-600" /> },
+  { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
+  { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-500" /> },
+  { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
+  { name: "Docker", icon: <FaDocker className="text-blue-500" /> },
+  { name: "AWS", icon: <FaAws className="text-orange-400" /> },
+];
 
+const SkillIcon: React.FC<Skill> = ({ name, icon }) => (
+  <motion.div
+    className="flex flex-col items-center bg-white p-6 rounded-2xl border border-blue-100 transition-all hover:border-blue-500"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+  >
+    <div className="text-4xl mb-4">{icon}</div>
+    <span className="text-sm font-medium text-gray-700 text-center">
+      {name}
+    </span>
+  </motion.div>
+);
+
+export default function SkillsSection() {
   return (
-    <section id="skills" className="px-3 py-20 text-white bg-gray-800">
-      <div className="mx-auto max-w-7xl">
-        <div className="mb-10 text-center">
-          <h2 className="mb-2 text-3xl font-bold">MY SKILLS</h2>
-          <h3 className="text-4xl">Areas of Expertise</h3>
-          <p className="mt-4 mb-4 text-gray-300">
-            With over 5 years of experience, I specialize in various
-            technologies, focusing on JavaScript, React.js, and more. Download
-            my CV below.
-          </p>
-          <Link
-            href="https://drive.google.com/file/d/12Ffn2kMXpzAv_wE4SKjc5g0gUAlqXGGQ/view?usp=sharing"
-            className="px-4 py-2 bg-blue-800 rounded-md hover:bg-blue-900"
-          >
-            View CV
-          </Link>
-        </div>
+    <section className="relative min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 overflow-hidden">
+      <div className="relative z-10 flex flex-col justify-center items-center min-h-screen px-4 py-16">
+        {/* Title and Subtitle */}
+        <motion.div
+          className="text-center"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="text-2xl md:text-3xl font-light mb-4 text-gray-600">
+            Technologies & Languages
+          </h2>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-900">
+            What I Work With
+          </h1>
+          <h3 className="text-3xl md:text-4xl font-semibold mb-8 text-blue-600">
+            The key technologies I specialize in.
+          </h3>
+        </motion.div>
 
-        <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
+        {/* Skills Grid */}
+        <motion.div
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-4xl mx-auto"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
           {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="p-6 text-center transition-transform transform bg-gray-700 rounded-md shadow-lg hover:scale-105"
-            >
-              <span className="flex items-center justify-center">
-                {skill.icon}
-              </span>
-              <h3 className="mt-2 text-xl font-semibold text-gray-200">
-                {skill.title}
-              </h3>
-            </div>
+            <SkillIcon key={index} {...skill} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
-};
-
-export default Skills;
+}
